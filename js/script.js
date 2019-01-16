@@ -1,7 +1,8 @@
 /* global $ */
 
 // BELOW Update the songs array with four of your favorites songs.
-var songs = [];
+var songs = ["I Miss You","Copycat","We Are Young","what do you want from me"];
+var songImage=["https://bit.ly/2FCeaUw","https://bit.ly/2FCe67e","https://bit.ly/2T3oPM0"]
 // BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
 // Make sure they match the same order as your array above
 
