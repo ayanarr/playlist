@@ -2,24 +2,29 @@
 
 // BELOW Update the songs array with four of your favorites songs.
 var songs = ["I Miss You","Copycat","We Are Young","what do you want from me"];
-var songImage=["https://bit.ly/2FCeaUw","https://bit.ly/2FCe67e","https://bit.ly/2T3oPM0"]
-// BELOW Add 4 More arrays to store images_links, artists, song lengths, and links for each song
-// Make sure they match the same order as your array above
-
+var songImages=["https://bit.ly/2FCeaUw","https://bit.ly/2FCe67e","https://bit.ly/2T3oPM0","https://bit.ly/2sWOv1q"]
+var artists =["Aaliyah","Billie Elish","Fun","Adam lambert"]
 
 
 function displaySongInfo(){
-    // BELOW Use forEach Loop to display the data from each of your arrays in the correct div
+    // BELOW Use f songs.forEach(function(song){
+    songs.forEach(function(song){
+      $("#songs").append("<p>"+song+"</p>");
+    });
+
+     artists.forEach(function(artist){
+          $("#artists").append("<p>"+artist+"</p>");
+     });
+     
+     songImages.forEach(function(songImage) {
+         $("#images").append("< img src="+songImage+">");
+     });
 
 }
 
 function emptySongInfo(){
-    $("#songs").empty();
-    // Use jQuery to empty all of the remaining divs
-
-
-}
-
+    
+}    
 
 function addSongInfo(){
     // BELOW write the code to add new items to each of the arrays.
